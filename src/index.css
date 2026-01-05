@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+Wellness/Health Coaching - Teal/Mint Color Scheme
+*/
+
+@layer base {
+  :root {
+    --background: 150 40% 97%;
+    --foreground: 150 25% 20%;
+
+    --card: 150 35% 95%;
+    --card-foreground: 150 25% 20%;
+
+    --popover: 150 40% 97%;
+    --popover-foreground: 150 25% 20%;
+
+    --primary: 160 45% 38%;
+    --primary-foreground: 150 40% 97%;
+
+    --secondary: 160 35% 88%;
+    --secondary-foreground: 150 25% 25%;
+
+    --muted: 150 25% 88%;
+    --muted-foreground: 150 15% 50%;
+
+    --accent: 35 70% 55%;
+    --accent-foreground: 150 40% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 150 40% 97%;
+
+    --border: 150 20% 88%;
+    --input: 150 20% 88%;
+    --ring: 160 45% 38%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 150 35% 95%;
+    --sidebar-foreground: 150 25% 25%;
+    --sidebar-primary: 160 45% 38%;
+    --sidebar-primary-foreground: 150 40% 97%;
+    --sidebar-accent: 35 70% 55%;
+    --sidebar-accent-foreground: 150 40% 97%;
+    --sidebar-border: 150 20% 88%;
+    --sidebar-ring: 160 45% 38%;
+
+    --shadow-soft: 0 4px 20px -4px hsl(160 45% 38% / 0.1);
+    --shadow-medium: 0 8px 30px -6px hsl(160 45% 38% / 0.15);
+  }
+
+  .dark {
+    --background: 150 25% 15%;
+    --foreground: 150 40% 95%;
+
+    --card: 150 25% 20%;
+    --card-foreground: 150 40% 95%;
+
+    --popover: 150 25% 15%;
+    --popover-foreground: 150 40% 95%;
+
+    --primary: 160 50% 45%;
+    --primary-foreground: 150 40% 97%;
+
+    --secondary: 150 25% 30%;
+    --secondary-foreground: 150 40% 95%;
+
+    --muted: 150 20% 35%;
+    --muted-foreground: 150 15% 65%;
+
+    --accent: 35 70% 55%;
+    --accent-foreground: 150 25% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 150 40% 97%;
+
+    --border: 150 20% 30%;
+    --input: 150 20% 30%;
+    --ring: 160 50% 45%;
+
+    --sidebar-background: 150 25% 15%;
+    --sidebar-foreground: 150 40% 95%;
+    --sidebar-primary: 160 50% 45%;
+    --sidebar-primary-foreground: 150 40% 97%;
+    --sidebar-accent: 35 70% 55%;
+    --sidebar-accent-foreground: 150 25% 15%;
+    --sidebar-border: 150 20% 30%;
+    --sidebar-ring: 160 50% 45%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
